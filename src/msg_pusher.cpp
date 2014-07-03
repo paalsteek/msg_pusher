@@ -45,7 +45,7 @@ Pusher::Pusher(boost::asio::io_service& io, const std::vector<std::string>& inte
 	_store = store_factory.create_msg_store();
 
 	klio::SensorFactory sensor_factory;
-	_sensor = sensor_factory.createSensor(
+	_sensor = sensor_factory.create_msg_sensor(
 		"uid123",
 		id,
 		"test",

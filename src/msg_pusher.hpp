@@ -23,7 +23,7 @@
 
 #include <libhexabus/device.hpp>
 
-#include <libklio/sensor.hpp>
+#include <libklio/msg/msg-sensor.hpp>
 #include <libklio/msg/msg-store.hpp>
 
 namespace msg_pusher {
@@ -44,7 +44,7 @@ namespace msg_pusher {
 		private:
 			hexabus::Device _device;
 			klio::MSGStore::Ptr _store;
-			klio::Sensor::Ptr _sensor;
+			klio::MSGSensor::Ptr _sensor;
 			bool _debug;
 	};
 }
